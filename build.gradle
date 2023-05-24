@@ -14,3 +14,9 @@ dependencies {
   implementation 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+task fatJar(type: Jar){
+	manifest {
+		attributes 'Main-Class' : 'com.main.java.memoranda'
+	}
+	
+}

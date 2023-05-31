@@ -15,7 +15,7 @@ dependencies {
 }
 
 task fatJar(type: Jar) {
-    archiveBaseName = 'bmeddeb_memoranda'
+    archiveBaseName = 'glezama1_memoranda'
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
     manifest {
